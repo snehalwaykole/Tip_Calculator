@@ -1,15 +1,14 @@
 <style>
 body{
   background: #EAB521;
-  widht:100%;
-  height:100%;
 }
 #box{
 background: #F7F7F5;
 position: center;
 width:350px;
 height: 450px;
-margin: 400px;
+margin-left: 40%;
+margin-top: 5%;
 border-radius: 20px;
 }
 h1{
@@ -51,6 +50,7 @@ button:hover{
   color: red;
   font-size:20px;
   z-index: 1;
+  margin-left: 20%;
 }
 </style>
 <html>
@@ -62,7 +62,7 @@ button:hover{
     var numOfPeople=document.getElementById("people").value;
   var total=(billamt*selected)/numOfPeople;
   document.getElementById("totalTip").style.display="block";
-  document.getElementById("totalTip").innerHTML=total;
+  document.getElementById("totalTip").innerHTML='Rs.'+total;
 }
 </script>
 </head>
